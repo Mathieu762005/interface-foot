@@ -7,11 +7,13 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  background-image: url(../images/bg.png);
+  background-size: cover;
 }
 
 .main {
   width: 60vw;
-  height: 90vh;
+  height: 85vh;
 }
 .main .main__Bellingham {
   width: 50%;
@@ -19,7 +21,23 @@
   background-image: url(../images/player.jpg);
   background-size: cover;
 }
+.main .main__Bellingham h1 {
+  font-size: 110px;
+}
 .main .main__articles {
   width: 50%;
   height: auto;
+}
+.main .main__articles .row {
+  height: 100%;
+}
+.main .main__articles .col {
+  background-color: #f3f3f3;
+}
+.main .main__articles .card {
+  width: 100%;
+  height: 100%;
+}
+.main .main__articles .card img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
