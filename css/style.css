@@ -1,43 +1,35 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-.body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+body {
   background-image: url(../images/bg.png);
   background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-
-.main {
-  width: 60vw;
+@media (max-width: 700px) {
+  body {
+    background-image: none;
+    background-color: white;
+  }
+}
+body .main {
+  width: 65vw;
   height: 85vh;
 }
-.main .main__Bellingham {
-  width: 50%;
-  height: auto;
+@media (max-width: 700px) {
+  body .main {
+    width: 100%;
+  }
+}
+body .main .row {
+  height: 100%;
+}
+body .main .row .gauche {
   background-image: url(../images/player.jpg);
   background-size: cover;
 }
-.main .main__Bellingham h1 {
-  font-size: 110px;
-}
-.main .main__articles {
-  width: 50%;
-  height: auto;
-}
-.main .main__articles .row {
-  height: 100%;
-}
-.main .main__articles .col {
+body .main .row .droite {
   background-color: #f3f3f3;
 }
-.main .main__articles .card {
+body .main .row .droite img {
   width: 100%;
-  height: 100%;
-}
-.main .main__articles .card img {
-  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
