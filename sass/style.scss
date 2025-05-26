@@ -1,36 +1,32 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
 body {
    background-image: url(../images/bg.png);
    background-size: cover;
-   width: 100%;
    height: 100vh;
+}
 
-   @media (max-width: 700px) {
-      background-image: none;
-      background-color: white;
+main {
+   width: 70%;
+
+   .gauche {
+      background-image: url(../images/player.jpg);
+      background-size: cover;
    }
 
-   .main {
-      width: 65vw;
-      height: 85vh;
+   .row {
+      .droite {
+         background-color: #f3f3f3;
 
-      @media (max-width: 700px) {
-         width: 100%;
-      }
-
-      .row {
-         height: 100%;
-
-         .gauche {
-            background-image: url(../images/player.jpg);
-            background-size: cover;
-         }
-
-         .droite {
-            background-color: #f3f3f3;
-             img {
-               width: 100%;
-               height: auto;
-             }
+         .row {
+            .col-6 {
+               .marge {
+                  height: 2.3rem;
+               }
+            }
          }
       }
    }
